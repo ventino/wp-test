@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: |
-         docker build php8.x/fpm-alpine --file Dockerfile --tag mcsaky/wp-test:$(date +%s)
+         docker build -t mcsaky/wp-test:8.1.6-fpm-alpine php8.x/fpm-alpine/
