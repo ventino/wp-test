@@ -12,6 +12,7 @@ RUN apk add --no-cache \
 		ghostscript \
 # Alpine package for "imagemagick" contains ~120 .so files, see: https://github.com/docker-library/wordpress/pull/497
 		imagemagick
+RUN apk add --update nodejs npm --no-cache
 
 # install the PHP extensions we need (https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions)
 RUN set -ex; \
